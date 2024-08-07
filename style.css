@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    /* background-color: rgba(27, 25, 25, 0.632); */
+}
+
+nav{
+    height: 70px;
+    display: flex;
+    background-color: rgb(23, 22, 22);
+    color: white;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    /* justify-content: space-between; */
+}
+
+.title{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 10px 0 0 10px;
+}
+
+.background{
+    height: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.nav_logo{
+    height: 40px;
+    width: 40px;
+    background-image: url("./images/logos_icons/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.search_bar{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+input{
+    height: 25px;
+    width: 30vw;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none;
+    padding-left: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    background-color: white;
+}
+
+.search_icon{
+    background-color: white;
+    height: 25px;
+    width: 35px;
+    outline: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+img{
+    background-color: white;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    padding: 0 15px;
+    margin: 0 15px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#first_opt{
+    margin-left: 100px;
+}
+
+.notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 0 10px;
+    height: 60px;
+    width: 60px;
+}
+
+.main_area{
+    background-color: rgba(0, 0, 0, 0.875);
+    width: 100vw;
+    padding-top: 70px;
+}
+
+.heading{
+    display: inline-block;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0 25px 30px;
+    padding-top: 25px;
+}
+
+.heading:hover{
+    text-decoration: underline;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    height: 250px;
+    width: 160px;
+    /* background-color: rgba(0, 0, 0, 0.875); */
+}
+
+.play{
+    height: 40px;
+    width: 40px;
+    background-image: url("./images/logos_icons/circle-play-solid.svg");
+    background-size: cover;
+    position: absolute;
+    left: 95px;
+    top: 120px;
+    opacity: 0;
+}
+
+.box:hover{
+    position: relative;
+    background-color: rgba(255, 253, 253, 0.144);
+    border-radius: 10px;
+    cursor: pointer;
+    .play{
+        /* position: absolute; */
+        top: 110px;
+        opacity: 1;
+        transition: top 0.2s linear;
+    }
+}
+
+.div_img{
+    height: 150px;
+    width: 140px;
+    background-size: cover;
+    margin: 10px 0 5px 10px;
+}
+
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin: 10px 0 0 10px;
+    font-size: 1.1rem;
+}
+
+.main_area p{
+    font-size: 0.9rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.592);
+    margin: 10px 0 0 10px;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.875);
+}
+
+.panel1 a{
+    display: block;
+    margin-left: 10px;
+    color: rgba(251, 250, 250, 0.606);
+    padding-top: 10px;
+}
+
+.panel1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    height: 270px;
+}
+
+.panel1 p{
+    margin-top: 100px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.social{
+    margin-top: 120px;
+}
+
+.social i{
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.panel2{
+    height: 160px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pages a{
+    margin: 0 25px;
+    color: rgba(251, 250, 250, 0.606);
+}
+
+.copyright{
+    color: rgba(251, 250, 250, 0.606);
+    margin-right: 25px;
+}
+
+a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.play_progress{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.play_icons{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.play_icons i{
+    size: 30px;
+    margin: 33px 15px;
+    cursor: pointer;
+}
+
+.time{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time img{
+    margin-right: 10px;
+    height: 20px;
+    width: 30px;
+}
+
+.time input{
+    width: 60%;
+    accent-color: rgb(33, 225, 33);
+}
+
