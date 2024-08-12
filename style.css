@@ -6,6 +6,7 @@
 }
 
 nav{
+    width: 100vw;
     height: 70px;
     display: flex;
     background-color: rgb(23, 22, 22);
@@ -124,6 +125,8 @@ li{
     height: 250px;
     width: 160px;
     /* background-color: rgba(0, 0, 0, 0.875); */
+    overflow-x: scroll;
+    margin-left: 3rem;
 }
 
 .play{
@@ -186,7 +189,7 @@ footer{
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
-    height: 270px;
+    flex-wrap: wrap;
 }
 
 .panel1 p{
@@ -227,6 +230,24 @@ footer{
 a:hover{
     color: white;
     cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+    .panel1 a{
+        font-size: 1rem;
+    }
+
+    .panel1 p{
+        font-size: 0.9rem;
+    }
+    
+    .panel2 a{
+        font-size: 1rem;
+    }
+
+    .panel2 p{
+        font-size: 0.9rem;
+    }
 }
 
 .play_progress{
