@@ -14,7 +14,6 @@ nav{
     align-items: center;
     position: fixed;
     top: 0px;
-    /* justify-content: space-between; */
 }
 
 .title{
@@ -93,7 +92,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 20px 0 10px;
+    margin-left: 3rem;
     height: 60px;
     width: 60px;
 }
@@ -119,13 +118,14 @@ li{
 .content{
     display: flex;
     justify-content: space-around;
+    margin-right: 3rem;
+    overflow-x: scroll;
+    overflow-y: clip;
 }
 
 .box{
     height: 250px;
     width: 160px;
-    /* background-color: rgba(0, 0, 0, 0.875); */
-    overflow-x: scroll;
     margin-left: 3rem;
 }
 
@@ -146,7 +146,6 @@ li{
     border-radius: 10px;
     cursor: pointer;
     .play{
-        /* position: absolute; */
         top: 110px;
         opacity: 1;
         transition: top 0.2s linear;
@@ -188,7 +187,7 @@ footer{
 .panel1{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 30px;
+    margin: 5px 12px 30px 12px;
     flex-wrap: wrap;
 }
 
@@ -211,14 +210,15 @@ footer{
 }
 
 .panel2{
-    height: 160px;
+    height: 180px;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
 
 .pages a{
-    margin: 0 25px;
+    margin-top: 5px;
+    padding: 20px;
     color: rgba(251, 250, 250, 0.606);
 }
 
@@ -230,24 +230,6 @@ footer{
 a:hover{
     color: white;
     cursor: pointer;
-}
-
-@media screen and (max-width: 900px){
-    .panel1 a{
-        font-size: 1rem;
-    }
-
-    .panel1 p{
-        font-size: 0.9rem;
-    }
-    
-    .panel2 a{
-        font-size: 1rem;
-    }
-
-    .panel2 p{
-        font-size: 0.9rem;
-    }
 }
 
 .play_progress{
@@ -265,7 +247,7 @@ a:hover{
 }
 
 .play_icons i{
-    size: 30px;
+    /* size: 30px; */
     margin: 33px 15px;
     cursor: pointer;
 }
